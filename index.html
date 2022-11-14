@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet.css" rel="stylesheet">
+    <link rel="preconnect" href="./LibreFranklin-VariableFont_wght.ttf">
+    <script src="https://kit.fontawesome.com/068ec41cf0.js" crossorigin="anonymous"></script> <!--poner esta script para que agarre las font fans de los <i>-->
+    <title>Ping comming soon</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="logo">
+    </header>
+    <div class="title">
+        <h1>We are launching<span> soon!</span></h1>
+        <h3>Subscribe and get notified</h3>
+    </div>
+    <section class="forma">
+         <form action="" class="mail">
+            <input id="mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" value="Your email address..." onfocus="this.value = ''" oninvalid="fix()" required>
+            <!--con el  onfocus="this.value = ''" cuando eld oy click al input me borra el texto del value -->
+            <aside id="text" style="display:none;" >Please provide a valid email address</aside>
+            <input id="sub" class="sub" type="submit" value="Notify Me" >
+         </form>
+    </section>
+    <div class="center">
+        <img src="illustration-dashboard.png" alt="center">
+    </div>
+    <footer>
+        <div class="botones">
+           <button><i class="fa-brands fa-facebook-f"></i></i></button> <!--para usar icons debo poner el scritp en el head y luego la tag con su class asi-->
+           <button id="b1" onmouseover="red()" onmouseout="out()"><i class="fa-brands fa-twitter"></i></button> 
+           <button><i class="fa-brands fa-instagram"></i></button> 
+        </div>
+        <p>© Copyright Ping. All rigths reserved.</p>
+    </footer>
+    <script src="./script.js" > </script> 
+</body>
+</html>

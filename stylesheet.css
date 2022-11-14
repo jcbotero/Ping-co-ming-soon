@@ -1,0 +1,233 @@
+body {
+    width: 1440px;
+    font-family: "Franklin";
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Franklin";
+    src: url("./LibreFranklin-VariableFont_wght.ttf");
+}
+
+header {
+    width: 100%;
+    padding: 7% 0px 1.5% 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h1 {
+    Font-size: 40px;
+    color:hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+.title span {
+ color: hsl(209, 33%, 12%);
+ font-weight: 700;
+}
+
+.title h3 {
+    font-weight: 300;
+}
+
+.forma {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0px 80px 0px;
+}
+
+.mail {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.mail input {
+    width: 42%;
+    height: 45px;
+    font-size: 15px;
+    color: hsl(223, 100%, 88%);
+    border-radius: 25px;
+    padding-left: 0.6cm; /* asi corro a la der el texto value del input*/
+    border-color: hsl(223, 100%, 88%) ;
+    border-style: solid; /* con border color y border style solid le doy color a todo el borde del elmentos */
+}
+
+
+.mail input:focus {
+    outline: none !important; 
+    border:1px solid hsl(354, 100%, 66%);
+    color: rgb(48, 47, 47);
+    
+}/* asi edito input o text area cuando lo estoy llenando */
+
+
+
+.mail .sub {
+    width: 25%;
+    height: 50px;
+    margin-left: 15px;
+    border-radius: 25px;
+    padding-right: 0.5cm; /* asi corro a la der el texto value del input*/
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-style: none;
+    cursor: url("pointer.png"), auto;
+}
+
+
+.mail .sub:hover  {
+    background: linear-gradient(hsl(223, 80%, 71%),hsl(223, 70%, 68%));  /* asi colco un color de fondo difumindado */
+}
+
+aside {
+    position: absolute;
+    color:hsl(354, 100%, 66%); 
+    text-align: left;
+    font-size: 12px;
+    width: 30%; /* en vez de colocar margin left o rigth grandisimo para centrar.. simplemente puedo reducir el width , es mas responsive*/
+    margin-top: 4%;
+    font-style: italic;
+   font-weight: 300;
+}
+
+.center img {
+    width: 40%;
+    height: 450px;
+    padding: 0px 30%;
+} 
+
+
+footer .botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.botones button {
+    margin: 0px 5px 20px 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border-color: hsl(226, 71%, 93%);
+    background-color: white;
+    border-style: solid ;
+    border-width: 0.02px; /* para el grosor del border */
+    color: hsl(223, 94%, 66%);
+    cursor: url("pointer.png"), auto;
+}
+
+footer p {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    margin: 10px 0px 50px 0px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px ) { 
+
+    body {
+        width: 375px;
+    }     
+    
+    header {
+        padding: 15% 0px 1.5% 0px;
+          
+    }
+    
+    .title {
+        width: 100%;
+        padding-top: 30px;
+        margin: 0px 10px;
+    }
+    
+    .title h1 {
+        Font-size: 28px;
+        font-weight: 300;
+    }
+    
+    .title span {
+     font-weight: 700;
+    }
+    
+    .title h3 {
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(83, 83, 83);
+    }
+    
+    .forma {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 0px 80px 0px;
+    }
+    
+    .mail {
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        margin: 0px 10%;
+    }
+    
+    .mail input {
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+        
+    }
+    
+    .mail .sub {
+        width: 110%;
+        height: 50px;
+        font-weight: 600; 
+        margin: 15px 5% 0px 0px ;
+        position: relative;
+    }
+    
+    aside {       
+        width: 100%;
+        position: static;
+        text-align: center;
+        margin-left: 11% ;
+        font-size: 12px;
+        width: 81%;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    .center img {
+        width: 100%;
+        height: 50%;
+        padding: 0px 8%;
+        margin-top: 10px;
+    } 
+    
+
+    footer .botones {
+      margin-top: 70px;
+    }
+    
+    .botones button {
+        margin: 0px 5px 20px 5px;
+    }
+    
+    footer p {
+        text-align: center;
+        margin: 10px 0px 50px 0px;
+        font-size: 12px;
+    }
+}
